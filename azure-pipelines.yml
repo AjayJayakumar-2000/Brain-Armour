@@ -1,0 +1,14 @@
+trigger:
+  - main  # Run the pipeline whenever you push to 'main'
+
+pool:
+  vmImage: 'ubuntu-latest'  # Use a free Linux machine
+
+steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '3.x'
+      addToPath: true
+
+  - script: python Brain_Armour.py
+    displayName: "Run Brain Armour Script"
