@@ -11,4 +11,5 @@ steps:
       addToPath: true
 
   - script: python Brain_Armour.py
+
     displayName: "Run Brain Armour Script"
